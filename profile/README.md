@@ -16,8 +16,11 @@ Epistola is an open-source document generation platform that turns templates int
 
 ## Demo environments
 
-- **Epistola** — [demo.epistola.app](https://demo.epistola.app)
-- **Valtimo integration** — [valtimo-demo.epistola.app](https://valtimo-demo.epistola.app)
+- **Epistola** — [demo.epistola.app](https://demo.epistola.app) - username `admin@local` - passwored `admin`
+- **Valtimo integration** — [valtimo-demo.epistola.app](https://valtimo-demo.epistola.app) - username `admin` password `admin`
+
+Note that data on demo environments is ephemeral and can be reset at any time.
+The demo environment is not always available yet. 
 
 ## Releases
 
