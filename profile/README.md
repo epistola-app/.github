@@ -1,6 +1,6 @@
 # Epistola
 
-<img align="left" width="240" height="240" alt="logo" src="https://github.com/user-attachments/assets/3d9ec276-eb56-4ff8-933c-daf1de4bf4c5" />
+<img align="left" width="120" height="120" alt="logo" src="https://github.com/user-attachments/assets/3d9ec276-eb56-4ff8-933c-daf1de4bf4c5" />
 
 Epistola is an open-source document generation platform that turns templates into compliant PDFs at scale. It acts as a single-purpose document renderer — you handle the orchestration, Epistola handles the rendering, template management and governance. Built for document-heavy organisations in regulated industries.
 
