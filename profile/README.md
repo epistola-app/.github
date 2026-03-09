@@ -8,7 +8,7 @@ Epistola is an open-source document generation platform that turns templates int
 |---|---|
 | [epistola-suite](https://github.com/epistola-app/epistola-suite) | The core platform — backend, frontend and all modules |
 | [epistola-contract](https://github.com/epistola-app/epistola-contract) | API contracts and shared models |
-| [valtimo-epistola-demo](https://github.com/epistola-app/valtimo-epistola-demo) | Demo integration with [Valtimo](https://www.valtimo.nl/) |
+| [valtimo-epistola-plugin](https://github.com/epistola-app/valtimo-epistola-plugin) | Epistola Plug-In for [Valtimo / gzac](https://www.valtimo.nl/) |
 
 ## Demo environments
 
