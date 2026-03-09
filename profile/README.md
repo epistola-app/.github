@@ -1,12 +1,24 @@
-## Hi there 👋
+# Epistola
 
-<!--
+Epistola is an open-source document generation platform that turns templates into compliant PDFs at scale. It acts as a single-purpose document renderer — you handle the orchestration, Epistola handles the rendering, template management and governance. Built for document-heavy organisations in regulated industries.
 
-**Here are some ideas to get you started:**
+## Repositories
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+| Repository | Description |
+|---|---|
+| [epistola-suite](https://github.com/epistola-app/epistola-suite) | The core platform — backend, frontend and all modules |
+| [epistola-contract](https://github.com/epistola-app/epistola-contract) | API contracts and shared models |
+| [valtimo-epistola-demo](https://github.com/epistola-app/valtimo-epistola-demo) | Demo integration with [Valtimo](https://www.valtimo.nl/) |
+
+## Demo environments
+
+- **Epistola** — [demo.epistola.app](https://demo.epistola.app)
+- **Valtimo integration** — [valtimo-demo.epistola.app](https://valtimo-demo.epistola.app)
+
+## Releases
+
+Docker images and Helm charts are published to [GitHub Container Registry (ghcr.io)](https://github.com/orgs/epistola-app/packages).
+
+## Links
+
+- [epistola.app](https://epistola.app) — project website
