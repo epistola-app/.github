@@ -16,11 +16,22 @@ Epistola is an open-source document generation platform that turns templates int
 
 ## Demo environments
 
-- **Epistola** — [demo.epistola.app](https://demo.epistola.app) - username `admin@local` - passwored `admin`
-- **Valtimo integration** — [valtimo-demo.epistola.app](https://valtimo-demo.epistola.app) - username `admin` password `admin`
+- **Epistola** — [demo.epistola.app](https://demo.epistola.app)
+- **Valtimo integration** — [valtimo-demo.epistola.app](https://valtimo-demo.epistola.app)
 
-Note that data on demo environments is ephemeral and can be reset at any time.
-The demo environment is not always available yet. 
+### Demo accounts
+
+| Username | Password | Permissions |
+|----------|----------|-------------|
+| `admin@demo` | `admin` | Full access — manage tenants, templates, themes, publish, generate |
+| `reader@demo` | `reader` | View templates, themes, and documents |
+| `editor@demo` | `editor` | View + edit templates and themes |
+| `generator@demo` | `generator` | View + generate documents |
+| `manager@demo` | `manager` | Full tenant access — edit, generate, publish, manage settings |
+
+You can also **register a new account** with any email address. Your email domain becomes your own private tenant (e.g., `you@yourcompany.com` creates tenant `yourcompany-com`) with full access.
+
+Data on demo environments is ephemeral and can be reset at any time. The demo environment is not always available yet.
 
 ## Releases
 
