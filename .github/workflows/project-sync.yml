@@ -1,0 +1,44 @@
+name: Sync Project Configuration
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "project.yml"
+      - "scripts/sync-project.mjs"
+      - ".github/workflows/project-sync.yml"
+  schedule:
+    # Run weekly to auto-link any new repos added to the org
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync GitHub Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3
+        with:
+          app-id: ${{ secrets.PROJECT_APP_ID }}
+          private-key: ${{ secrets.PROJECT_APP_PRIVATE_KEY }}
+          owner: epistola-app
+
+      - name: Setup Node.js
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm install yaml
+
+      - name: Sync project configuration
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: node scripts/sync-project.mjs
